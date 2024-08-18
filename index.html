@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="contenido__header">
+            <a href="./index.html">
+                <img src="./assets/Logo.png" alt="Logo de Alura">
+            </a>
+        </div>
+    </div>
+    </header>
+    <main>
+        <article class="contenido">
+            <section class="izquierda" id="izquierda">
+                <textarea class="area_texto" id="area_texto" placeholder="Ingrese aquí el texto" rows="30" autofocus></textarea>
+                <div class="contenido__botones">
+                    <span class="info">
+                        <img src="./assets/Group.png" alt="exclamación">Solo letras minusculas y sin acentos</span>
+                    <div class="botones">
+                        <button class="btn-encriptar" onclick = "btnEncriptar()">Encriptar</button>
+                        <button class="btn-desencriptar" onclick = "btnDesencriptar()">Desencriptar</button>
+                    </div>
+                </div>
+            </section>
+            <section class="derecha" id="derecha">
+                <img id="muneco" class="muneco" src="./assets/Muneco.png" alt= "Ningun mensaje fue encontrado">
+                <textarea id="mensaje" class="mensaje" placeholder= "Ningún mensaje fue encontrado."></textarea>
+                <p id="mensaje__info" class="mensaje__info">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button id="copiar" class="copiar ocultar" onclick = "btnCopiar()">Copiar</button>
+            </section>
+        </article>
+    </main>
+    <footer class="footer ">
+        <p class="creador">Creado por Eddison Iturra</p>
+        <div>
+            <a href="https://github.com/EddieBott" target="_blank">
+                <img class="links" src="./assets/github.png" />
+            </a>
+            
+            <a href="https://www.linkedin.com/in/eddisoniturra/" target="_blank">
+                <img class="links" src="./assets/linkedin.webp" />
+            </a>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
